@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser</title>
+  <script src="https://kit.fontawesome.com/630b4ab14c.js" crossorigin="anonymous"></script>
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+      border:0px;
+
+    }
+    #container1{
+      margin:0px auto;
+      width: 95%;
+      height: 500px;
+      background-color: rgb(255, 255, 255);
+      display:flex;
+    }
+    @font-face {
+      font-family:'Times New Roman', Times, serif;
+      src: url(../JAVASCRIPT/fonts/Regular.ttf);
+    }
+    #sidebar{
+      line-height: 25px;
+      padding: 20px;
+      width:27%;
+      height:  100vh;
+      background-color: rgb(255, 255, 255);
+      display: block;
+      overflow: auto;
+    }
+    li:hover{
+      border-left: solid 2px blue;
+      border-radius: ;
+      background-color: rgb(196, 196, 196);
+    }
+    li{
+      list-style-type: none;
+      padding: 5px;
+      font-size: medium;
+    }
+    #article{
+      width:70%;
+      height: 100vh;
+      background-color: rgb(226, 226, 226);
+      display: block;
+      text-align: left;
+      padding: 20px 20px 20px 20px;
+    }
+    main{
+      width: 90%;
+      height: 400px;
+      background-color: rgb(255, 255, 255);
+      padding: 10px 5px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    #cases{
+      display: flex;
+    }
+    #case1{
+      width: 50%;
+      height: 170px;
+      border: solid 2px rgb(146, 146, 146);
+      margin : 15px;
+      border-radius:5px ;
+      justify-content: space-between ;
+     }
+     #case1:hover{
+      border: solid 4px blue;
+      box-sizing: border-box;
+     }
+    #case2{
+      width: 47%;
+      height: 170px;
+      border: solid 2px rgb(146, 146, 146);
+      margin : 15px;
+      border-radius:5px ;
+      
+    }
+    #case2:hover{
+      border: solid 4px blue;
+      box-sizing: border-box;
+     }
+    #a{
+      margin-top: 50px;
+      width:60%;
+      height: 10px;
+      background-color: gray;
+      border-radius: 5px;
+    }
+    #b{
+      margin-top: 50px;
+      width:35%;
+      height: 10px;
+      background-color: gray;
+      border-radius: 5px;
+    }
+    #c{
+      margin-top: 10px;
+      width:45%;
+      height: 10px;
+      background-color: gray;
+      border-radius: 5px;
+    }
+    #d{
+      margin-top: 10px;
+      width:50%;
+      height: 10px;
+      background-color: rgb(77, 47, 247);
+      border-radius: 5px;
+    }
+    input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 20px;
+    border:solid 2px black;
+    }
+    #case1 .top{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+   }
+   #case2 .top{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+   }
+   #case1 .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+   }
+   #case2 .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+   }
+   .fa-solid,fa-brands,fa-regular{
+    color:rgb(6, 26, 209);
+   }
+
+  </style>
+</head>
+<body>
+  <div id="container1">
+    <div id="sidebar">
+      <h2>Settings</h2>
+      <button type="submit"><i class="fa fa-search"></i></button>
+      <input type="text" placeholder="Search Settings" name="search"> 
+      <li><i class="fa-solid fa-user"></i> Profiles</li>
+      <li><i class="fa-solid fa-lock"></i> Privacy, search, and services</li>
+      <li><i class="fa-solid fa-palette"></i> Appearance</li>
+      <li><i class="fa-sharp fa-solid fa-house-chimney"></i> Start, home, and new tabs</li>
+      <li><i class="fa-regular fa-share-from-square" style="color:blue"></i> Share, copy and paste</li>
+      <li><i class="fa-solid fa-gear"></i> Cookies and site permissions</li>
+      <li><i class="fa-solid fa-window-maximize"></i> Default browser</li>
+      <li><i class="fa-solid fa-download"></i> Downloads</li>
+      <li><i class="fa-solid fa-users-line"></i> Family safety</li>
+      <li><i class="fa-solid fa-fingerprint"></i> Finger Print</li>
+      <li><i class="fa-solid fa-language"></i> Languages</li>
+      <li><i class="fa-solid fa-print"></i> Printers</li>
+      <li><i class="fa-solid fa-laptop"></i> System and performance</li>
+      <li><i class="fa-solid fa-rotate-left"></i> Reset settings</li>
+      <li><i class="fa-solid fa-mobile-screen"></i> Phone and other devices</li>
+      <li><i class="fa-solid fa-universal-access"></i> Accessibility</li>
+      <li><i class="fa-brands fa-edge" style="color:blue"></i> About Microsoft Edge</li> 
+      </div>
+    <div id="article">
+      <h2>Share, copy and paste</h2>
+      <p>Some paste destinations don't support all paste options, in which case the destination will paste what is supported.
+      <a href="#" > Learn More</a></p>
+      <main>
+        <h4>URL copy & paste format default</h4><br>
+        <div id="cases">
+            <div id="case1">Link
+                <div class="top">
+                    <div id="a"></div>
+                    <div id="b"></div>
+                  </div><br>
+                  <div class="bottom">
+                    <div id="c"></div>
+                    <div id="d"></div>
+                  </div><br><br> 
+              <p align="right">Ctrl+V</p>
+
+            </div>
+            <div id="case2">Plain Text
+                <div class="top">
+                    <div id="a"></div>
+                    <div id="b"></div>
+                  </div><br>
+                  <div class="bottom">
+                    <div id="c"></div>
+                    <div id="d"></div>
+                  </div><br><br> 
+              <p align="right">Ctrl+Shift+V</p>
+            </div>
+        </div>
+        <h4>Use the format selected above when copying links within web pages</h4><br>
+        <p>Using the "Link" format when copying links within a web page will load the destination page in the background to obtain the destination page's title. Loading the destination page in the background will have the effect of visiting the page to the server. However, the visit to the page will not appear in your browsing history.</p>
+      </main>
+    </div>
+  </div>
+  
+</body>
+</html>
